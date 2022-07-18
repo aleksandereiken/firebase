@@ -42,6 +42,7 @@ const signinOpts = (opts) => {
   if(opts.email_link)
     signin.push({
       provider: EmailAuthProvider.PROVIDER_ID,
+      requireDisplayName: false,
       signInMethod: EmailAuthProvider.EMAIL_LINK_SIGN_IN_METHOD
     });
 
